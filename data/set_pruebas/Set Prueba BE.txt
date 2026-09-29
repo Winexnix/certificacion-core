@@ -1,0 +1,63 @@
+SII SET DE PRUEBA DE BOLETA ELECTRONICA DE VENTAS Y SERVICIOS
+
+INDICACIONES GENERALES:
+Para consultar los datos del contribuyente, como giro, razon social, direcciones y sucursales, Direccion
+Regional o Unidad, debe ingresar a la opcion "Mi SII" de la pagina del SII.
+Ademas se le recomienda no utilizar abreviaciones en los giros.
+
+IMPORTANTE
+Informar las cifras con separador de miles, y los caracteres deben estar informados tal cual se encuentran en el Set.
+
+CASO-1
+==========
+
+Item					Cantidad	Precio Unitario con IVA
+Cambio de aceite			1			19900
+Alineacion y balanceo 			1			9900
+
+
+CASO-2
+=========
+
+Item					Cantidad	Precio Unitario con IVA
+Papel de regalo				17			120
+
+
+CASO-3
+=========
+
+Item					Cantidad	Precio Unitario con IVA
+Sandwic					2			1500
+Bebida					2			550
+
+
+CASO-4
+=========
+
+Item					Cantidad	Precio Unitario con IVA
+item afecto 1				8			1590
+item exento 2				2			1000
+
+
+OBSERVACION: "El item 1 es un servicio afecto. El item 2 es un servicio exento."
+
+
+CASO-5
+=========
+
+Item					Cantidad	Precio Unitario con IVA
+Arroz					5			700
+
+
+OBSERVACION: "Se debe informar en el XML Unidad de medida en Kg."
+
+==========================================================================
+
+OBSERVACIONES GENERALES
+-----------------------
+Debe referenciar el caso correspondiente a cada boleta en el XML. Ejemplo:
+
+<CodRef> SET
+<RazonRef> CASO-1
+
+*Se omitieron las tildes para permitir una correcta lectura de la informacion.

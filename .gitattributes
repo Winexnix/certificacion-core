@@ -1,0 +1,13 @@
+# Sin filtros de fin de linea: los bytes del repo son los bytes que se despliegan.
+# src/ va en LF, igual que lo que hoy corre en produccion. Los literales
+# multilinea de src/ arman XML que despues se firma: una conversion CRLF<->LF
+# cambiaria bytes firmados, asi que git no debe tocar nada.
+* -text
+
+# Nada de esto viaja al dist: las apps que consumen el paquete solo necesitan
+# src/. bin/ son herramientas de diagnostico y data/ tiene material sensible.
+/.claude        export-ignore
+/.gitattributes export-ignore
+/.gitignore     export-ignore
+/bin            export-ignore
+/data           export-ignore

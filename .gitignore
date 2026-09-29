@@ -1,0 +1,13 @@
+/vendor/
+/.env
+/composer.lock
+
+# Material sensible: certificado real, CAF (traen la llave privada del folio)
+# y todo lo que generan los scripts. NUNCA versionar.
+/data/certs/
+/data/caf/
+/data/output/
+.claude/
+
+# Resultados de escaneos de seguridad (uso interno)
+CLAUDE-SECURITY-*/
