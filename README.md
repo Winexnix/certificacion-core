@@ -1,5 +1,7 @@
 # winex/certificacion — Boleta Electrónica del SII de Chile
 
+[![Tests](https://github.com/Winexnix/certificacion-core/actions/workflows/tests.yml/badge.svg)](https://github.com/Winexnix/certificacion-core/actions/workflows/tests.yml) [![Licencia: Apache-2.0](https://img.shields.io/badge/licencia-Apache--2.0-blue.svg)](LICENSE) ![PHP 8.3+](https://img.shields.io/badge/PHP-8.3%2B-777bb4.svg)
+
 Librería PHP (8.3+) para certificar y emitir boletas electrónicas (tipo 39/41) ante el SII: firma electrónica, timbre (TED/CAF), solicitud de folios, postulación y declaración de cumplimiento, y envío por SOAP (certificación) y REST (producción).
 
 ## Licencia y apoyo
