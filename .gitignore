@@ -11,3 +11,6 @@
 
 # Resultados de escaneos de seguridad (uso interno)
 CLAUDE-SECURITY-*/
+
+# PHPUnit
+.phpunit.cache/

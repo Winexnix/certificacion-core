@@ -11,3 +11,6 @@
 /.gitignore     export-ignore
 /bin            export-ignore
 /data           export-ignore
+/tests          export-ignore
+/phpunit.xml.dist export-ignore
+/.github        export-ignore

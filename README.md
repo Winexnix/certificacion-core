@@ -142,6 +142,17 @@ Diagnostico (solo lectura): `php bin/certificacion/estado-declaracion.php <rut-e
 
 `.env` en la raiz: copia `.env.example` y completalo (certificado, clave, ruta de openssl y datos del emisor).
 
+## Pruebas
+
+```
+composer install
+composer test
+```
+
+Los tests corren sin red ni certificados reales: generan sus propias llaves, certificados y CAF de mentira. Verifican de verdad las firmas (XML-DSig y timbre TED) con OpenSSL y cubren, entre otras cosas, el desglose de IVA, el descuento global, el parser del Set de Pruebas, el RCOF y los rechazos que ya nos dio el SII (reparos 260 y 510, RFR, ESTADO 11).
+
+No cubren lo que solo se puede probar contra el SII: el login por certificado, la solicitud de folios y la postulación. Para eso hay que usar el ambiente de certificación (`maullin`).
+
 ## Uso
 
 Los scripts se pueden invocar desde cualquier directorio; `bootstrap.php` fija el
